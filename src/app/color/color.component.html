@@ -3,3 +3,12 @@
 <button (click)="changeColor(yellow)">Yellow</button>
 <button (click)="changeColor(blue)">Blue</button>
 <h1 class="result" [style.color]="color">Pick a color</h1>
+<label>R</label>
+<input (change)="changeColor2()" type="range" min="0" max="255" value="18" [(ngModel)]="r">
+<label >G</label>
+<input (change)="changeColor2()" type="range" min="0" max="255" value="0" [(ngModel)]="g">
+<label>B</label>
+<input (change)="changeColor2()" type="range" min="0" max="255" value="0" [(ngModel)]="b">
+<h1 style="color: rgb(255, 255, 0)"> hihi</h1>
+<h1 [style.color]= "rgb"> hihi</h1>
+

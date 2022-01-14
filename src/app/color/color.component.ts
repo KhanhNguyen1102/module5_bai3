@@ -10,11 +10,18 @@ export class ColorComponent implements OnInit {
   yellow = '#ffff00';
   blue = '#0000ff';
   color = 'black';
+  r = 0;
+  g = 0;
+  b = 0;
+  rgb = "";
   constructor() { }
 
   ngOnInit(): void {
   }
   changeColor(color : string) : void{
    this.color = color;
+  }
+  changeColor2() :void{
+   this.rgb= "rgb(" + this.r + ", " +this.g + ", " + this.b+")";
   }
 }
