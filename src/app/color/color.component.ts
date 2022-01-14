@@ -21,7 +21,5 @@ export class ColorComponent implements OnInit {
   changeColor(color : string) : void{
    this.color = color;
   }
-  changeColor2() :void{
-   this.rgb= "rgb(" + this.r + ", " +this.g + ", " + this.b+")";
-  }
+
 }
