@@ -17,6 +17,7 @@ import { RatingBarComponent } from './rating-bar/rating-bar.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TimelinesComponent } from './timelines/timelines.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ProgressBarComponent,
     RatingBarComponent,
     CountdownTimerComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    TimelinesComponent
   ],
   imports: [
     BrowserModule,
