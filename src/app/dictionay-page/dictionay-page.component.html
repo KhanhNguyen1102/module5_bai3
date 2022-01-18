@@ -1,0 +1,4 @@
+<div *ngFor="let item of wordsList">
+  <h3><a [routerLink]="['/dictionary', item.word]">{{item.word}}</a></h3>
+</div>
+<router-outlet></router-outlet>

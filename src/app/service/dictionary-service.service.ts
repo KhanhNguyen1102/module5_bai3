@@ -24,7 +24,8 @@ export class DictionaryServiceService {
     }
   ];
   constructor() { }
-  translate(word:string):string{
+
+  translate(word: string | null):string{
 //@ts-ignore
     return this.words.find(item => item.word === word).mean
   }

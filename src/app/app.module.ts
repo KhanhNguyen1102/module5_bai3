@@ -21,6 +21,8 @@ import { TimelinesComponent } from './timelines/timelines.component';
 import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
 import { RegisterComponent } from './register/register.component';
+import { DictionayPageComponent } from './dictionay-page/dictionay-page.component';
+import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +41,9 @@ import { RegisterComponent } from './register/register.component';
     TimelinesComponent,
     YoutubePlaylistComponent,
     YoutubePlayerComponent,
-    RegisterComponent
+    RegisterComponent,
+    DictionayPageComponent,
+    DictionaryDetailComponent
   ],
   imports: [
     BrowserModule,
