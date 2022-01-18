@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {DemoServiceService} from "../service/demo-service.service";
 
 
 
@@ -12,10 +13,12 @@ export class NameCardComponent implements OnInit {
   @Input() email!: string;
   @Input() phone!: string;
 
-  constructor() {
+  constructor(private demoService:DemoServiceService) {
   }
 
   ngOnInit() {
   }
-
+  hello():void{
+    this.demoService.sayHello();
+  }
 }

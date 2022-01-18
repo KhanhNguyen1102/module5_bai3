@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {DemoServiceService} from "../service/demo-service.service";
 
 
 @Component({
@@ -11,7 +12,7 @@ export class ProgressBarComponent implements OnInit {
   @Input() progressColor = '#4CAF50';
   @Input() progress = 0;
 
-  constructor() {
+  constructor(private demoService:DemoServiceService) {
   }
 
   ngOnInit() {
@@ -26,5 +27,7 @@ export class ProgressBarComponent implements OnInit {
       }
     }, 1000);
   }
-
+ saySomething():void{
+    this.demoService.sayHello();
+ }
 }
