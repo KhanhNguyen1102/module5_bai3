@@ -18,6 +18,9 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
 import { EmployeeComponent } from './employee/employee.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TimelinesComponent } from './timelines/timelines.component';
+import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
+import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,10 @@ import { TimelinesComponent } from './timelines/timelines.component';
     RatingBarComponent,
     CountdownTimerComponent,
     EmployeeComponent,
-    TimelinesComponent
+    TimelinesComponent,
+    YoutubePlaylistComponent,
+    YoutubePlayerComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
