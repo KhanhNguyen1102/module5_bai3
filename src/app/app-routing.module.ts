@@ -23,7 +23,6 @@ const routes: Routes = [
   },
   {
     path: 'dictionary',
-    component: DictionayPageComponent,
     children: [{
       path: ':word',
       component: DictionaryDetailComponent

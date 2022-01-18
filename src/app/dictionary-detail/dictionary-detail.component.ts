@@ -7,13 +7,13 @@ import {DictionaryServiceService} from "../service/dictionary-service.service";
   styleUrls: ['./dictionary-detail.component.css']
 })
 export class DictionaryDetailComponent implements OnInit {
-  word:any;
+  mean!:string;
   constructor(private activatedRoute: ActivatedRoute,private dictionaryService : DictionaryServiceService) { }
 
   ngOnInit(): void {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       const word1 = paramMap.get('word');
-      this.word = this.dictionaryService.translate(word1);
+      this.mean = this.dictionaryService.translate(word1);
     });
   }
 
